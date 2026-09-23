@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nisi Selvan S J — VLSI &amp; Hardware Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --bg-panel:#F7F7F7;
+    --line:#111111;
+    --line-soft:#D8D8D8;
+    --text:#111111;
+    --text-dim:#555555;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:'IBM Plex Sans',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+  a{color:var(--text);text-decoration:underline;text-underline-offset:2px;}
+  a:hover{color:var(--text-dim);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--text);outline-offset:3px;}
+
+  header.hero{padding:72px 0 40px;border-bottom:2px solid var(--line);}
+  .hero-inner{max-width:760px;margin:0 auto;padding:0 24px;}
+  .pin{display:flex;align-items:center;gap:10px;color:var(--text-dim);font-family:'IBM Plex Mono',monospace;font-size:13px;margin-bottom:18px;}
+  .pin svg{flex:none;}
+  h1{font-size:clamp(34px,6vw,52px);line-height:1.05;margin:0 0 10px;font-weight:700;letter-spacing:-0.01em;}
+  .role{font-size:18px;color:var(--text-dim);margin:0 0 28px;font-family:'IBM Plex Mono',monospace;}
+  .contact-row{display:flex;flex-wrap:wrap;gap:18px;font-size:14px;font-family:'IBM Plex Mono',monospace;}
+  .contact-row span{color:var(--text-dim);}
+
+  section{padding:44px 0;border-bottom:1px solid var(--line-soft);}
+  section:last-of-type{border-bottom:none;}
+  h2{font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.04em;color:var(--text);
+     margin:0 0 24px;display:flex;align-items:center;gap:12px;}
+  h2::after{content:"";flex:1;height:1px;background:var(--line-soft);}
+
+  p.lead{font-size:16.5px;line-height:1.7;color:var(--text);max-width:64ch;}
+
+  .skill-grid{display:grid;grid-template-columns:1fr;gap:0;}
+  .skill-row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line-soft);}
+  .skill-row:last-child{border-bottom:none;}
+  .skill-label{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text);font-weight:600;}
+  .skill-val{font-size:15px;color:var(--text-dim);line-height:1.5;}
+
+  .entry{margin-bottom:28px;}
+  .entry:last-child{margin-bottom:0;}
+  .entry-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 16px;margin-bottom:6px;}
+  .entry-title{font-size:17px;font-weight:600;}
+  .entry-org{color:var(--text-dim);font-size:15px;}
+  .entry-date{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--text-dim);white-space:nowrap;}
+  .entry ul{margin:8px 0 0;padding-left:18px;color:var(--text-dim);font-size:15px;line-height:1.6;}
+  .entry ul li{margin-bottom:4px;}
+  .entry ul li::marker{color:var(--text);}
+
+  .proj-card{border:1px solid var(--line);background:var(--bg-panel);border-radius:2px;padding:22px 24px;margin-bottom:18px;}
+  .proj-card:last-child{margin-bottom:0;}
+  .proj-title{font-weight:700;font-size:16.5px;margin-bottom:6px;}
+  .proj-stack{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--text-dim);margin-bottom:12px;}
+  .proj-desc{color:var(--text-dim);font-size:14.5px;line-height:1.7;margin:0;}
+  .proj-desc + .proj-desc{margin-top:10px;}
+
+  footer{padding:40px 0 64px;text-align:center;}
+  footer p{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text-dim);margin:0;}
+  footer a{color:var(--text);}
+
+  @media (max-width:520px){
+    .skill-row{grid-template-columns:1fr;gap:4px;}
+    header.hero{padding:56px 0 32px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="pin">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="14" height="14" rx="1" stroke="#111111" stroke-width="1.2"/><circle cx="8" cy="8" r="2" fill="#111111"/></svg>
+      PORTFOLIO
+    </div>
+    <h1>Nisi Selvan S J</h1>
+    <p class="role">VLSI Design · Embedded Systems · Hardware Engineering</p>
+    <div class="contact-row">
+      <a href="mailto:nisiselvan005@gmail.com">nisiselvan005@gmail.com</a>
+      <span>+91 99523 93043</span>
+      <a href="https://linkedin.com/in/nisi-selvan-s-j-0573b32b8" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Nisiselvan" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="summary">
+    <h2>SUMMARY</h2>
+    <p class="lead">Electronics and Communication Engineering graduate (2025), new to the VLSI and hardware field. Completed a VLSI Design internship and built a few small hardware projects to learn practical skills. Looking for an entry-level role in VLSI Design or Hardware Engineering.</p>
+  </section>
+
+  <section id="skills">
+    <h2>SKILLS</h2>
+    <div class="skill-grid">
+      <div class="skill-row">
+        <div class="skill-label">Chip Design</div>
+        <div class="skill-val">Verilog HDL (RTL writing), understanding of the ASIC design flow</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-label">PCB Design</div>
+        <div class="skill-val">Autodesk Eagle — schematic capture, 2-layer layout, DRC</div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-label">Embedded</div>
+        <div class="skill-val">ATmega328P, ESP32, SPI/UART</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work-experience">
+    <h2>WORK EXPERIENCE</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">PCB Service Engineer</div>
+        <div class="entry-date">Aug – Sep 2026</div>
+      </div>
+      <div class="entry-org">Sterna Security Devices Pvt. Ltd., Coimbatore</div>
+      <ul><li>Supported PCB-related service and troubleshooting tasks for one month.</li></ul>
+    </div>
+  </section>
+
+  <section id="internships">
+    <h2>INTERNSHIPS</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">VLSI Design Intern</div>
+        <div class="entry-date">Mar – Jun 2026</div>
+      </div>
+      <div class="entry-org">Corizo Edutech (IIT Bombay's Mood Indigo)</div>
+      <ul>
+        <li>Designed and tested digital circuits — multiplexers, flip-flops, FSMs — in Verilog HDL.</li>
+        <li>Gained an introductory understanding of the ASIC design flow and basic Static Timing Analysis.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">PCB Design Intern</div>
+        <div class="entry-date">Jun – Jul 2024</div>
+      </div>
+      <div class="entry-org">Sunshiv Electronics Solution</div>
+      <ul>
+        <li>Drew circuit schematics and designed 2-layer PCB boards in Autodesk Eagle.</li>
+        <li>Checked designs for DRC errors and prepared Gerber files for manufacturing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>PROJECTS</h2>
+    <div class="proj-card">
+      <div class="proj-title">Object Location System for Visually Impaired</div>
+      <div class="proj-stack">ATmega328P · RFID RC522 · SPI/UART</div>
+      <p class="proj-desc">A hardware aid that helps a visually impaired user identify nearby objects. Each object carries a small RFID tag; when the RC522 reader picks up a tag, the ATmega328P microcontroller identifies it and triggers a GPIO buzzer with a distinct pattern so the user knows what's nearby without needing to see it.</p>
+      <p class="proj-desc">The RFID reader talks to the microcontroller over SPI, while UART was used to log data for debugging. During testing, the SPI/UART communication was unreliable — I used a logic analyzer to capture the signal timing, traced the fault to a wiring/protocol mismatch, and fixed it so tag reads registered consistently. Firmware was kept to basic Embedded C, since the focus of the project was the hardware and sensor integration rather than the software.</p>
+    </div>
+    <div class="proj-card">
+      <div class="proj-title">FPGA Cricket Score Display System</div>
+      <div class="proj-stack">Verilog HDL · FPGA · Xilinx ISE · 7-Segment Display</div>
+      <p class="proj-desc">A live cricket score counter built entirely in digital logic. I wrote the score-counter circuit in Verilog HDL — counters and control logic that increment runs and track state on button input — then simulated and synthesized the design in Xilinx ISE.</p>
+      <p class="proj-desc">The synthesized design was deployed onto real FPGA hardware, with the running score driven out to a 7-segment display. This project was my first hands-on pass at taking an RTL design from simulation all the way through to working hardware.</p>
+    </div>
+    <div class="proj-card">
+      <div class="proj-title">Skin Cancer Prediction System</div>
+      <div class="proj-stack">Python · CNN · TensorFlow · Keras</div>
+      <p class="proj-desc">A machine learning side project outside the hardware field, built to explore CNNs. I trained a convolutional neural network using TensorFlow and Keras on a dataset of skin lesion images, combining the image data with patient details (such as age) as additional input features to improve prediction accuracy for skin cancer risk.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>EDUCATION</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">B.E., Electronics and Communication Engineering</div>
+        <div class="entry-date">2021 – 2025</div>
+      </div>
+      <div class="entry-org">Anna University, Regional Campus, Coimbatore — CGPA 7.1 / 10</div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">Higher Secondary Certificate</div>
+        <div class="entry-date">2021</div>
+      </div>
+      <div class="entry-org">Sathyam Matriculation Hr. Sec. School — 89%</div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>CERTIFICATIONS</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">VLSI Design Internship</div>
+        <div class="entry-date">Mar – Jun 2026</div>
+      </div>
+      <div class="entry-org">Corizo Edutech, IIT Bombay's Mood Indigo</div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">VLSI Design and Recent Trends</div>
+        <div class="entry-date">Mar 2024</div>
+      </div>
+      <div class="entry-org">IIT Palakkad, MeitY C2S Project</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>nisiselvan005@gmail.com · <a href="https://github.com/Nisiselvan" target="_blank" rel="noopener">github.com/Nisiselvan</a></p>
+</footer>
+
+</body>
+</html>
